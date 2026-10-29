@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# This is a frontend-only, single-page website. Contact by phone:
+# 862-290-4278

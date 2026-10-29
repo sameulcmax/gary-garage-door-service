@@ -1,0 +1,17 @@
+{
+  "name": "Gary Coakley Garage Door Repair",
+  "short_name": "Gary Coakley",
+  "description": "Garage door repair, installation, replacement, openers, roller shutters and commercial shutter services.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#FFFFFF",
+  "theme_color": "#002868",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
