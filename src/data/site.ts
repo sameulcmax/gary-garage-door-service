@@ -5,7 +5,7 @@
  * Do not add claims, ratings, certifications, or hours here.
  */
 export const business = {
-  name: "Gary Coakley Garage Door Repair",
+  name: "Gary Miller Garage Door Service",
   shortName: "Gary Coakley",
   displayMark: "GARY COAKLEY",
   descriptor: "Garage Door Repair",
@@ -335,48 +335,49 @@ export const services: Service[] = [
 ];
 
 export const serviceBySlug = (slug: string) => services.find((service) => service.slug === slug);
+export const servicePath = (slug: string) => `/services/${encodeURIComponent(slug)}`;
 
 export type PageMeta = { title: string; description: string };
 
 export const pageMeta: Record<string, PageMeta> = {
   "/": {
-    title: "Garage Door Repair & Installation | Gary Coakley Garage Door Repair",
+    title: "Garage Door Repair & Installation | Gary Miller Garage Door Service",
     description:
       "Garage door repair, installation, replacement, openers, roller shutters and commercial shutter services for residential and commercial properties. Call 862-290-4278.",
   },
   "/about": {
-    title: "About Gary Coakley Garage Door Repair",
+    title: "About Gary Miller Garage Door Service",
     description:
       "A New Jersey-based garage door and shutter service business serving residential and commercial customers with installation, repair, replacement and maintenance. Call 862-290-4278.",
   },
   "/services": {
-    title: "Garage Door & Shutter Services | Gary Coakley Garage Door Repair",
+    title: "Garage Door & Shutter Services | Gary Miller Garage Door Service",
     description:
       "Explore garage door installation, repair, replacement, automatic doors, maintenance, roller shutters, shutter installation and commercial shutters. Call 862-290-4278.",
   },
   "/garage-doors": {
-    title: "Garage Door Styles & Installation | Gary Coakley Garage Door Repair",
+    title: "Garage Door Styles & Installation | Gary Miller Garage Door Service",
     description:
       "Sectional, raised-panel, roller and carriage-style garage door directions for your home — plus what shapes the right door choice. Call 862-290-4278.",
   },
   "/faq": {
-    title: "Garage Door FAQs | Gary Coakley Garage Door Repair",
+    title: "Garage Door FAQs | Gary Miller Garage Door Service",
     description:
       "Practical answers about garage door repair, replacement, automatic doors, shutters, service coverage and safety. Call 862-290-4278.",
   },
   "/contact": {
-    title: "Contact Gary Coakley Garage Door Repair | 862-290-4278",
+    title: "Contact Gary Miller Garage Door Service | 862-290-4278",
     description:
       "Call 862-290-4278 to discuss garage door repair, installation, replacement, openers, shutters and maintenance for residential or commercial properties.",
   },
   "/privacy": {
-    title: "Privacy | Gary Coakley Garage Door Repair",
+    title: "Privacy | Gary Miller Garage Door Service",
     description:
-      "A plain-language summary of how information shared when you call Gary Coakley Garage Door Repair is handled.",
+      "A plain-language summary of how information shared when you call Gary Miller Garage Door Service is handled.",
   },
 };
 
 export const servicePageMeta = (service: Service): PageMeta => ({
-  title: `${service.name} | Gary Coakley Garage Door Repair`,
+  title: `${service.name} | Gary Miller Garage Door Service`,
   description: `${service.summary} Discuss ${service.name.toLowerCase()} for a residential or commercial property. Call 862-290-4278.`,
 });
